@@ -8,8 +8,111 @@
         <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-        <h1>Hello, world!</h1>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <script src="./js/main.js"></script>
+    <!-- title -->
+    <div class="parralaxImg py-5 text-center">
+        <div class="container">
+            <h2 class="display-3 my-4">JavaScript Quiz</h2>
+        </div>
+    </div>
+    
+    <!-- quiz -->
+    <div class="quiz py-4">
+        <div class="container">
+            <h2 class="my-5">Lets test your knowledge on JavaScript</h2>
+
+            <form class="quiz-form">
+                <div class="my-5">
+                    <p class="lead font-weight-normal">1. Select the correct Data Types that are supported by JavaScript.</p>
+                    <div class="form-check my-2 text-50">
+                        <input type="checkbox" name="q1" value="A" checked>
+                        <label class="form-check-label">Symbol</label>
+                    </div>
+                    <div class="form-check my-2 text-50">
+                        <input type="checkbox" name="q1" value="B" checked>
+                        <label class="form-check-label">Object</label>
+                    </div>
+                    <div class="form-check my-2 text-50">
+                        <input type="checkbox" name="q1" value="C" checked>
+                        <label class="form-check-label">String</label>
+                    </div>
+                    <div class="form-check my-2 text-50">
+                        <input type="checkbox" name="q1" value="B">
+                        <label class="form-check-label">Array</label> <!--an array is a data structure not a data type-->
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">2. JavaScript is a case-sensitive language?</p>
+                    <div class="form-check my-2 text-50">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label class="form-check-label">True</label>
+                    </div>
+                    <div class="form-check my-2 text-50">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">False</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">3. What is the correct way to create an object in JavaScript?</p>
+                    <div class="form-check my-2 text-50">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label class="form-check-label">
+                            <code>cosnt emp = {name: "Daniel", age: 23};</code>
+                        </label>
+                    </div>
+                    <div class="form-check my-2 text-50">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">
+                            <code>const emp = [name: "Daniel", age: 23];</code>
+                        </label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">4. With event bubbling, which element is the event first captured and handled by?</p>
+                    <div class="form-check my-2 text-50">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label class="form-check-label">the <strong>innermost</strong> element</label>
+                    </div>
+                    <div class="form-check my-2 text-50">
+                        <input type="radio" name="q4" value="B">
+                        <label class="form-check-label">the <strong>outermost</strong> element</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">5. What will be the output of the code below</p>
+                    <div class="code-box">
+                        <code>
+                            const output = (function(x){<br>
+                                delete x;<br>
+                                return x;<br>
+                            })(0);<br>
+                            console.log(output);  <!--The output would be 0. The delete operator is used to delete properties from an object. Here x is not an object but a local variable. delete operators don’t affect local variables.-->
+                        </code>
+                    </div>
+                    <div class="form-check my-2 text-50">
+                        <input type="radio" name="q5" value="A">
+                        <label class="form-check-label">Uncaught SyntaxError: Unexpected identifier 'x'</label>
+                    </div>
+                    <div class="form-check my-2 text-50">
+                        <input type="radio" name="q5" value="B">
+                        <label class="form-check-label">x</label>
+                    </div>
+                    <div class="form-check my-2 text-50">
+                        <input type="radio" name="q5" value="C">
+                        <label class="form-check-label">undefined</label>
+                    </div>
+                    <div class="form-check my-2 text-50">
+                        <input type="radio" name="q5" value="D" checked>
+                        <label class="form-check-label">0</label>
+                    </div>
+                </div>
+                <!-- submit -->
+                <div class="submit-button">
+                    <input type="submit" class="btn btn-light">
+                </div>
+            </form>
+        </div>
+    </div>
+        
+    <script src="./js/main.js"></script>
   </body>
 </html>
