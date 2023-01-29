@@ -16,17 +16,18 @@ form.addEventListener('submit', e => {
     });
     
 // results
-    document.documentElement.scrollTop = 0;
+    scrollTo(0, 0);
     result.classList.remove('d-none');
 
+    // animation: percentage
 let output = 0;
-const percentage = setInterval(() => {
+const timer = setInterval(() => {
     result.querySelector('span').textContent = `${output}%`;
     if (output === score) {
         clearInterval(timer);
     } else {
         output++;
     }
-}, 0010);
+}, 10);
     
 });
